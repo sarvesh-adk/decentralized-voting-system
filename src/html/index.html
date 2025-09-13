@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="sarveshadk">
+    <meta name="description" content="Decentralized Voting System - Secure blockchain-powered voting platform">
+    <title>Decentralized Voting System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-brand">
+        <i class="fab fa-ethereum"></i>
+        <span>Decentralized Voting</span>
+      </div>
+      <div class="nav-status">
+        <div class="status-indicator">
+          <i class="fas fa-circle status-dot"></i>
+          <span>Live Voting</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1><i class="fas fa-vote-yea"></i> Cast Your Vote</h1>
+        <p class="voting-period">
+          <i class="fas fa-calendar-alt"></i>
+          Voting Period: <span id="dates" class="dates-highlight">Loading...</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="voting-card">
+        <div class="card-header">
+          <h2><i class="fas fa-users"></i> Candidates</h2>
+          <p>Select your preferred candidate from the list below</p>
+        </div>
+        
+        <div class="candidates-table-container">
+          <table class="candidates-table">
+            <thead>
+              <tr>
+                <th><i class="fas fa-user"></i> Name</th>
+                <th><i class="fas fa-flag"></i> Party</th>
+                <th><i class="fas fa-chart-bar"></i> Total Votes</th>
+                <th><i class="fas fa-hand-point-up"></i> Select</th>
+              </tr>
+            </thead>
+            <tbody id="boxCandidate"></tbody>
+          </table>
+        </div>
+
+        <div class="voting-section">
+          <div class="voting-instructions">
+            <i class="fas fa-info-circle"></i>
+            <p>Please select one candidate and click the vote button to cast your ballot securely on the blockchain.</p>
+          </div>
+          
+          <button id="voteButton" class="vote-btn" onclick="App.vote()" disabled>
+            <i class="fas fa-vote-yea"></i>
+            Cast Your Vote
+          </button>
+          
+          <div id="msg" class="message-container"></div>
+          <div id="vote-box"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="account-info">
+      <div class="account-card">
+        <i class="fas fa-wallet"></i>
+        <p id="accountAddress" class="account-address">Connecting to wallet...</p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.9.0/dist/web3.min.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
