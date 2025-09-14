@@ -2,7 +2,7 @@
 // Author: sarveshadk
 // Decentralized Voting System - Truffle Migrations Contract
 
-pragma solidity ^0.5.15;
+pragma solidity ^0.8.0;
 
 contract Migrations {
   address public owner;
@@ -13,7 +13,7 @@ contract Migrations {
     _;
   }
 
-  constructor() public {
+  constructor() {
     owner = msg.sender;
   }
 
