@@ -14,7 +14,7 @@
 - Metamask
 - Python (version – 3.9)
 - FastAPI
-- MySQL Database (port – 3306) 
+- MySQL Database (port – 3306)
 
 ## Installation
 
@@ -98,7 +98,7 @@
     
         truffle migrate
 
-You're all set! The Voting app should be up and running now at http://localhost:8080/.<br>
+You're all set! The Voting app should be up and running now at http://localhost:8080/.
 
 ## Code Structure
 
@@ -147,6 +147,4 @@ The code in this repository is licensed under the MIT License. This means that y
 
 ## Author
 
-**Sarveshadk** - [sarvesh-adk](https://github.com/sarvesh-adk)
-
-## If you like this project, please give it a star.
+**Sarvesh ADK** - [sarvesh-adk](https://github.com/sarvesh-adk)
